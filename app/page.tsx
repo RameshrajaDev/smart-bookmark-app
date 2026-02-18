@@ -8,7 +8,7 @@ export default function Home() {
     await supabase.auth.signInWithOAuth({
       provider: "google",
       options: {
-        redirectTo: "http://localhost:3000/dashboard",
+        redirectTo: "https://smart-bookmark-app-nine-silk.vercel.app/dashboard",
       },
     });
   };
